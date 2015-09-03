@@ -7,10 +7,10 @@
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-    <link href="css/ionic.app.css" rel="stylesheet">
-    -->
+<link href="css/ionic.app.css" rel="stylesheet">
+-->
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
@@ -20,15 +20,98 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
+    <style>
+      .item-thumbnail-right img,
+      .ion-image{
+        margin-right: 40px;
+      }
+
+      h2.padding-top {
+        margin-top: 27px;
+      }
+    </style>
   </head>
   <body ng-app="starter">
 
-    <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
+    <ion-pane ng-controller="listController as listCtrl">
+      <ion-header-bar class="bar-dark">
+        <h1 class="title">My Profile</h1>
       </ion-header-bar>
-      <ion-content>
+      <ion-content class="padding-top">
+        <div class="list">
+          <div class="item item-divider">
+          </div>
+          <div class="item item-divider">
+          </div>
+
+          <a class="item item-thumbnail-right item-icon-right" href="#">
+            <img src="http://placehold.it/100x100">
+            <h2 class="padding-top">Profile Photo</h2>
+            <i class="icon ion-ios-arrow-right"></i>
+          </a>
+<!---->
+          <a class="item item-icon-right item-icon-right" href="#">
+            Name
+            <span class="item-note">
+              Hongbo Jing
+            </span>
+            <i class="icon ion-ios-arrow-right"></i>
+          </a>
+<!---->
+
+          <a class="item" href="#">
+            WeChat ID
+            <span class="item-note">
+              lollol
+            </span>
+          </a>
+<!---->
+          <a class="item item-icon-right" href="#">
+            My QR Code
+
+            <i class="fa fa-qrcode item-note"></i>
+            <i class="icon ion-ios-arrow-right"></i>
+          </a>
+
+          <div class="item item-divider">
+          </div>
+
+          <a class="item item-icon-right item-icon-right" href="#">
+            Gender
+            <span class="item-note">
+              Male
+            </span>
+            <i class="icon ion-ios-arrow-right"></i>
+          </a>
+          <a class="item item-icon-right item-icon-right" href="#">
+            Region
+            <span class="item-note">
+              Haidian, Beijing
+            </span>
+            <i class="icon ion-ios-arrow-right"></i>
+          </a>
+          <a class="item item-icon-right item-icon-right" href="#">
+            What's up
+            <span class="item-note">
+              Awesome
+            </span>
+            <i class="icon ion-ios-arrow-right"></i>
+          </a>
+
+          <div class="item item-divider">
+          </div>
+
+          <a class="item item-icon-right item-icon-right" href="#">
+            LinkedIn Account
+            <span class="item-note">
+              Show
+            </span>
+            <i class="icon ion-ios-arrow-right"></i>
+          </a>
+        </div>
+
       </ion-content>
+
     </ion-pane>
   </body>
 </html>
